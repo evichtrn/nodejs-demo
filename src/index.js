@@ -23,8 +23,13 @@ app.set("views", path.join(__dirname, "resources/views"));
 app.get("/", (req, res) => {
   res.render("home");
 });
+
 app.get("/courses", (req, res) => {
   res.render("courses");
+});
+
+app.get("/news", (req, res) => {
+  res.render("news");
 });
 
 app.listen(port, () => {
